@@ -29,7 +29,14 @@ export const getGenerationBestScores = async () => {
 
     const data = await collection
         .find({})
-        .project({ generation: 1, bestScore: 1, createdAt: 1 })
+        .project({
+            generation: 1,
+            bestScore: 1,
+            average: 1,
+            median: 1,
+            worstScore: 1,
+            createdAt: 1,
+        })
         .sort({ createdAt: 1 })
         .toArray();
     return data;

@@ -7,10 +7,10 @@ import fs from "fs/promises";
 import { getOrMakeDbConnection } from "../db";
 import { Collection } from "mongodb";
 
-const POPULATION_SIZE = 10;
-const ELITISM_PERCENTAGE = 0.5;
+const POPULATION_SIZE = 50;
+const ELITISM_PERCENTAGE = 0.4;
 const MUTATION_PERCENTAGE = 0.1;
-const PARALLEL_GAME = 4;
+const PARALLEL_GAME = 1;
 
 const lastGenerationFile = "lastGeneration.json";
 
@@ -89,6 +89,9 @@ export class Generation {
             bestScore: results.best.score,
             config: results.best.config,
             seed: results.best.bestGame.seed,
+            average: results.average,
+            median: results.median,
+            worstScore: results.worstScore,
             createdAt: Date.now(),
         });
 
@@ -193,10 +196,14 @@ export class Population {
         const best = sorted[0];
 
         const average = results.reduce((acc, current) => acc + current.score, 0) / results.length;
+        const median = sorted[Math.floor(POPULATION_SIZE / 2)].score;
 
+        const worstScore = sortBy(results, "score", "asc")[0].score;
         return {
             best,
             average,
+            median,
+            worstScore,
             bestScore: best.score,
             scores: sorted.map((result) => result.score),
         };

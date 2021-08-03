@@ -9,7 +9,7 @@ import {
     getRelativeHeight,
     getRoughness,
 } from "./pomped";
-import { randomSeed } from "./utils";
+import { BasePiece, randomSeed } from "./utils";
 
 export type Grid = string[][];
 export class Ia {
@@ -70,30 +70,60 @@ const wait = async (delay: number) =>
     new Promise((resolve) => setTimeout(() => resolve(true), delay));
 
 export const findBestMove = (game: Game, config: IAConfig) => findAllMoves(game, config)[0];
+interface Score {
+    y: number;
+    rotation: number;
+    score: number;
+}
+export const findAllMoves = (
+    game: Game,
+    config: IAConfig,
+    currentQueue?: BasePiece[],
+    depth?: number
+) => {
+    // console.log(
+    //     "findallMoves",
+    //     currentQueue?.length,
+    //     currentQueue?.map((piece) => piece.name)
+    // );
 
-export const findAllMoves = (game: Game, config: IAConfig) => {
-    const scores: { y: number; rotation: number; score: number }[] = [];
+    const scores: Score[] = [];
 
+    const rotation = 0;
+    const gameClone = game.clone();
+
+    const { min, max } = getYRange(gameClone);
     ROTATIONS.forEach((rotation) => {
-        const gameClone = game.clone();
-
-        const { min, max } = getYRange(gameClone);
+        const tmpQueue = currentQueue
+            ? [...currentQueue]
+            : [game.currentPiece.piece, ...game.queue];
 
         for (let y = min; y <= max; y++) {
+            const y = 2;
             const clone = gameClone.clone(false);
-            clone.currentPiece.rotate(rotation);
-            moveTo(clone, y);
 
-            clone.dropPiece();
+            const sumOfAllMoves = tmpQueue.reduce((acc, current) => {
+                console.log("reduce", current.name, clone.currentPiece.name, depth);
+                clone.currentPiece.rotate(rotation);
+                moveTo(clone, y);
 
-            const computedScore = computeScore(clone.grid, config);
+                clone.dropPiece();
 
+                const subClone = clone.clone();
+                const newQueue = [...tmpQueue].slice(1);
+                if (newQueue.length !== 0) {
+                    return (
+                        acc + findAllMoves(subClone, config, newQueue, (depth || 0) + 1)[0].score
+                    );
+                }
+                return acc;
+            }, 0);
             scores.push({
                 y,
                 // game: clone,
                 rotation,
                 // scores: computedScore.scores,
-                score: computedScore.total,
+                score: computeScore(clone.grid, config).total + sumOfAllMoves,
             });
         }
     });

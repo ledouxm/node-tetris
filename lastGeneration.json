@@ -1,85 +1,85 @@
 {
-    "generation": 115,
+    "generation": 1181,
     "configs": [
         {
-            "nbClearedRowsFactor": 0.535779366307771,
-            "nbHolesFactor": -0.7694106777397327,
-            "weightedHeightFactor": -0.11942021109488754,
-            "cumulativeHeightFactor": -0.5057285296666092,
-            "relativeHeightFactor": 0.11955947063043149,
-            "roughnessFactor": -0.3563547602426288
+            "nbClearedRowsFactor": 0.30523064985952875,
+            "nbHolesFactor": -1.5476997151318637,
+            "weightedHeightFactor": -0.21402220783292814,
+            "cumulativeHeightFactor": -1.5022312411773706,
+            "relativeHeightFactor": -1.6795280373096495,
+            "roughnessFactor": -1.0574291424023081
         },
         {
-            "nbClearedRowsFactor": 0.7298504408834794,
-            "nbHolesFactor": -0.7694106777397327,
-            "weightedHeightFactor": -0.11942021109488754,
-            "cumulativeHeightFactor": -0.5057285296666092,
-            "relativeHeightFactor": 0.9544730189900386,
-            "roughnessFactor": -0.3563547602426288
+            "nbClearedRowsFactor": 0.24866027803637536,
+            "nbHolesFactor": 0.07613132534508749,
+            "weightedHeightFactor": -0.21402220783292814,
+            "cumulativeHeightFactor": -1.0568962253507537,
+            "relativeHeightFactor": -1.706209292796442,
+            "roughnessFactor": -1.0574291424023081
         },
         {
-            "nbClearedRowsFactor": 0.9916761014786359,
-            "nbHolesFactor": -0.7694106777397327,
-            "weightedHeightFactor": -0.11942021109488754,
-            "cumulativeHeightFactor": -0.6483101581415402,
-            "relativeHeightFactor": 0.016395598956103763,
-            "roughnessFactor": 0.3596582415384719
+            "nbClearedRowsFactor": -0.6618987194646779,
+            "nbHolesFactor": -1.4926877003591281,
+            "weightedHeightFactor": -1.3317851415897863,
+            "cumulativeHeightFactor": -1.5022312411773706,
+            "relativeHeightFactor": -1.706209292796442,
+            "roughnessFactor": -1.0574291424023081
         },
         {
-            "nbClearedRowsFactor": 0.4932997971708848,
-            "nbHolesFactor": -0.7694106777397327,
-            "weightedHeightFactor": -0.11942021109488754,
-            "cumulativeHeightFactor": -0.5619051007356113,
-            "relativeHeightFactor": 0.016395598956103763,
-            "roughnessFactor": -0.3563547602426288
+            "nbClearedRowsFactor": 0.24866027803637536,
+            "nbHolesFactor": -1.5476997151318637,
+            "weightedHeightFactor": -0.21402220783292814,
+            "cumulativeHeightFactor": -1.0568962253507537,
+            "relativeHeightFactor": -1.273325680171932,
+            "roughnessFactor": -1.0574291424023081
         },
         {
-            "nbClearedRowsFactor": 0.4932997971708848,
-            "nbHolesFactor": 0.006052462273816728,
-            "weightedHeightFactor": -0.11942021109488754,
-            "cumulativeHeightFactor": -0.514129596890613,
-            "relativeHeightFactor": 0.016395598956103763,
-            "roughnessFactor": -0.3563547602426288
+            "nbClearedRowsFactor": 0.9706387723523577,
+            "nbHolesFactor": -0.9058541781321914,
+            "weightedHeightFactor": -1.5629087708770502,
+            "cumulativeHeightFactor": -1.5249985503105554,
+            "relativeHeightFactor": 0.6083497552206008,
+            "roughnessFactor": -1.256411197497863
         },
         {
-            "nbClearedRowsFactor": 0.4932997971708848,
-            "nbHolesFactor": -0.7694106777397327,
-            "weightedHeightFactor": -0.11942021109488754,
-            "cumulativeHeightFactor": -0.5057285296666092,
-            "relativeHeightFactor": 0.11955947063043149,
-            "roughnessFactor": -0.3563547602426288
+            "nbClearedRowsFactor": 0.9706387723523577,
+            "nbHolesFactor": -1.4926877003591281,
+            "weightedHeightFactor": -0.878911089624659,
+            "cumulativeHeightFactor": -1.5022312411773706,
+            "relativeHeightFactor": -0.36788497026865796,
+            "roughnessFactor": -1.0722305243303596
         },
         {
-            "nbClearedRowsFactor": 0.4932997971708848,
-            "nbHolesFactor": -0.7694106777397327,
-            "weightedHeightFactor": -0.11942021109488754,
-            "cumulativeHeightFactor": -0.5057285296666092,
-            "relativeHeightFactor": 0.016395598956103763,
-            "roughnessFactor": -0.3563547602426288
+            "nbClearedRowsFactor": 1.909398030817405,
+            "nbHolesFactor": 0.7238178557601218,
+            "weightedHeightFactor": -0.878911089624659,
+            "cumulativeHeightFactor": -1.0153567740225125,
+            "relativeHeightFactor": 1.0971756459459234,
+            "roughnessFactor": -1.0574291424023081
         },
         {
-            "nbClearedRowsFactor": 0.7298504408834794,
-            "nbHolesFactor": -0.7694106777397327,
-            "weightedHeightFactor": -0.11942021109488754,
-            "cumulativeHeightFactor": -0.5057285296666092,
-            "relativeHeightFactor": 0.016395598956103763,
-            "roughnessFactor": -0.3563547602426288
+            "nbClearedRowsFactor": 0.9706387723523577,
+            "nbHolesFactor": -1.5476997151318637,
+            "weightedHeightFactor": 1.0358336002614927,
+            "cumulativeHeightFactor": -1.5249985503105554,
+            "relativeHeightFactor": 0.6083497552206008,
+            "roughnessFactor": -1.0574291424023081
         },
         {
-            "nbClearedRowsFactor": 0.4932997971708848,
-            "nbHolesFactor": -0.7694106777397327,
-            "weightedHeightFactor": -0.11942021109488754,
-            "cumulativeHeightFactor": -0.5619051007356113,
-            "relativeHeightFactor": 0.016395598956103763,
-            "roughnessFactor": -0.3563547602426288
+            "nbClearedRowsFactor": -0.820010055175058,
+            "nbHolesFactor": -1.5476997151318637,
+            "weightedHeightFactor": -0.21402220783292814,
+            "cumulativeHeightFactor": -1.240752620693063,
+            "relativeHeightFactor": -1.706209292796442,
+            "roughnessFactor": -1.0574291424023081
         },
         {
-            "nbClearedRowsFactor": 0.4932997971708848,
-            "nbHolesFactor": -0.7694106777397327,
-            "weightedHeightFactor": -0.11942021109488754,
-            "cumulativeHeightFactor": -0.5057285296666092,
-            "relativeHeightFactor": 0.016395598956103763,
-            "roughnessFactor": -0.3563547602426288
+            "nbClearedRowsFactor": -1.4602660103508684,
+            "nbHolesFactor": -1.5476997151318637,
+            "weightedHeightFactor": -0.878911089624659,
+            "cumulativeHeightFactor": 0.19236797582694987,
+            "relativeHeightFactor": -1.6795280373096495,
+            "roughnessFactor": -1.0574291424023081
         }
     ]
 }

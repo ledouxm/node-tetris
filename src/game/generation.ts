@@ -7,10 +7,10 @@ import fs from "fs/promises";
 import { getOrMakeDbConnection } from "../db";
 import { Collection } from "mongodb";
 
-const POPULATION_SIZE = 100;
+const POPULATION_SIZE = 10;
 const ELITISM_PERCENTAGE = 0.5;
 const MUTATION_PERCENTAGE = 0.1;
-const PARALLEL_GAME = 1;
+const PARALLEL_GAME = 4;
 
 const lastGenerationFile = "lastGeneration.json";
 
@@ -89,6 +89,7 @@ export class Generation {
             bestScore: results.best.score,
             config: results.best.config,
             seed: results.best.bestGame.seed,
+            createdAt: Date.now(),
         });
 
         this.oldPop = this.population;
@@ -126,23 +127,30 @@ export class Population {
         }
 
         const sorted = sortBy(this.oldPopulation.individuals, "avgScore", "desc");
-        const bestHalf = sorted.slice(0, Math.round(sorted.length / 2));
+        // const bestHalf = sorted.slice(0, Math.round(sorted.length / 2));
         // console.log(sorted.map(individual => individual.avgScore));
 
-        // const totalScore = bestHalf.reduce((acc, current) => acc + current.avgScore, 0);
-        // const probs = bestHalf.map((agent) => agent.avgScore / totalScore);
-
+        const totalScore = sorted.reduce((acc, current) => acc + current.avgScore, 0);
+        const probs = sorted.map((agent) => agent.avgScore / totalScore);
         this.individuals = [];
+
+        let avgA = 0;
+        let avgB = 0;
+        let cpt = 0;
 
         for (let i = 0; i < POPULATION_SIZE; i++) {
             if (i < POPULATION_SIZE * ELITISM_PERCENTAGE) {
                 this.individuals.push(new Ia(makeClone(), sorted[i].config));
             } else {
-                const a = Math.floor(random() * bestHalf.length);
-                const b = Math.floor(random() * bestHalf.length);
+                const a = randomWithProbs(probs);
+                const b = randomWithProbs(probs);
 
-                const parentA = bestHalf[a];
-                const parentB = bestHalf[b];
+                avgA += a;
+                avgB += b;
+                cpt++;
+
+                const parentA = sorted[a];
+                const parentB = sorted[b];
 
                 const configData = { ...parentA.config };
                 Object.keys(parentA.config).map((key) => {
@@ -150,12 +158,15 @@ export class Population {
                     //@ts-ignore
                     if (r >= 0.5) configData[key] = parentB.config[key];
                 });
-
                 const config = new IAConfig(configData);
-
                 this.individuals.push(new Ia(makeClone(), config));
             }
         }
+
+        avgA /= cpt;
+        avgB /= cpt;
+
+        console.log({ avgA, avgB });
     }
 
     mutate() {

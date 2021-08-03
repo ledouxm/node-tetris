@@ -1,7 +1,7 @@
 import { Router } from "express";
 import { Game, getRandomPiece } from "../game/game";
 import { Ia } from "../game/ia";
-import { getBestGeneration } from "./generation";
+import { getBestGeneration, getGenerationBestScores } from "./generation";
 
 const router = Router();
 
@@ -15,6 +15,12 @@ router.get("/game/best", async (_req, res) => {
     const result = ia.playWholeGame();
 
     res.status(200).send({ ...result, generation: best.generation });
+});
+
+router.get("/evolutions", async (_req, res) => {
+    const data = await getGenerationBestScores();
+
+    res.status(200).send(data);
 });
 
 export { router };

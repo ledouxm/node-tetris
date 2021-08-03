@@ -23,3 +23,14 @@ export const getGenerationByNumber = async (number: number) => {
 
     return best;
 };
+
+export const getGenerationBestScores = async () => {
+    const { collection } = await getOrMakeDbConnection();
+
+    const data = await collection
+        .find({})
+        .project({ generation: 1, bestScore: 1, createdAt: 1 })
+        .sort({ createdAt: 1 })
+        .toArray();
+    return data;
+};

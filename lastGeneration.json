@@ -1,405 +1,405 @@
 {
-    "generation": 47,
+    "generation": 6331,
     "configs": [
         {
-            "nbClearedRowsFactor": -44.80171926358653,
-            "nbHolesFactor": -98.30247560030169,
-            "weightedHeightFactor": -17.246498834263463,
-            "cumulativeHeightFactor": -93.30422370882278,
-            "relativeHeightFactor": -23.82771316620537,
-            "roughnessFactor": -33.491670434865625
+            "nbClearedRowsFactor": 1.6135251863890134,
+            "nbHolesFactor": -149.21818628439874,
+            "weightedHeightFactor": 8.282138925928862,
+            "cumulativeHeightFactor": -51.838742962421385,
+            "relativeHeightFactor": -90.71330300935296,
+            "roughnessFactor": -68.86995724747675
         },
         {
-            "nbClearedRowsFactor": -26.210247507455932,
-            "nbHolesFactor": 95.23951487604455,
-            "weightedHeightFactor": -16.881040867230098,
-            "cumulativeHeightFactor": -93.30422370882278,
-            "relativeHeightFactor": -27.1055942937421,
-            "roughnessFactor": -90.24599590497229
+            "nbClearedRowsFactor": -6.545780217371572,
+            "nbHolesFactor": -159.79999195176245,
+            "weightedHeightFactor": 9.345389927647084,
+            "cumulativeHeightFactor": -61.61965602179936,
+            "relativeHeightFactor": -80.9923323677281,
+            "roughnessFactor": -69.53083400168472
         },
         {
-            "nbClearedRowsFactor": 46.360441518230914,
-            "nbHolesFactor": -41.14776789334344,
-            "weightedHeightFactor": -17.246498834263463,
-            "cumulativeHeightFactor": -54.029596780773005,
-            "relativeHeightFactor": -26.794667122958998,
-            "roughnessFactor": -39.70428902926153
+            "nbClearedRowsFactor": -1.864443018976511,
+            "nbHolesFactor": -153.48858420603773,
+            "weightedHeightFactor": 8.745718829448437,
+            "cumulativeHeightFactor": -53.1075347564396,
+            "relativeHeightFactor": -94.673034552336,
+            "roughnessFactor": -67.79940567067914
         },
         {
-            "nbClearedRowsFactor": -51.604683057748105,
-            "nbHolesFactor": -49.720002579105646,
-            "weightedHeightFactor": -17.246498834263463,
-            "cumulativeHeightFactor": -54.029596780773005,
-            "relativeHeightFactor": -6.528879743480928,
-            "roughnessFactor": -28.803324377778978
+            "nbClearedRowsFactor": -7.316468172278827,
+            "nbHolesFactor": -145.0882306911256,
+            "weightedHeightFactor": 10.48344862962346,
+            "cumulativeHeightFactor": -63.17842874709854,
+            "relativeHeightFactor": -93.4379251123103,
+            "roughnessFactor": -66.77665363506026
         },
         {
-            "nbClearedRowsFactor": 4.2069256203323135,
-            "nbHolesFactor": -61.15139282173801,
-            "weightedHeightFactor": -17.246498834263463,
-            "cumulativeHeightFactor": -66.16318468703226,
-            "relativeHeightFactor": -27.1055942937421,
-            "roughnessFactor": 70.74308393841105
+            "nbClearedRowsFactor": -5.590385108404311,
+            "nbHolesFactor": -159.74406762795346,
+            "weightedHeightFactor": 12.79641089846325,
+            "cumulativeHeightFactor": -54.30586332691971,
+            "relativeHeightFactor": -93.04242944437605,
+            "roughnessFactor": -67.74579477620372
         },
         {
-            "nbClearedRowsFactor": -51.604683057748105,
-            "nbHolesFactor": -28.736790056084203,
-            "weightedHeightFactor": -17.246498834263463,
-            "cumulativeHeightFactor": -93.30422370882278,
-            "relativeHeightFactor": -27.1055942937421,
-            "roughnessFactor": -28.803324377778978
+            "nbClearedRowsFactor": -6.790134699521962,
+            "nbHolesFactor": -151.3375381288347,
+            "weightedHeightFactor": 10.861035065996994,
+            "cumulativeHeightFactor": -55.00821072224208,
+            "relativeHeightFactor": -92.99548531889333,
+            "roughnessFactor": -72.09541823436255
         },
         {
-            "nbClearedRowsFactor": -4.302004292910908,
-            "nbHolesFactor": -41.86444620065418,
-            "weightedHeightFactor": -17.246498834263463,
-            "cumulativeHeightFactor": -93.30422370882278,
-            "relativeHeightFactor": -70.9448541641932,
-            "roughnessFactor": -50.14139985575703
+            "nbClearedRowsFactor": 2.50737055798577,
+            "nbHolesFactor": -156.7273342532102,
+            "weightedHeightFactor": 11.84507708344707,
+            "cumulativeHeightFactor": -55.66833112382913,
+            "relativeHeightFactor": -92.60484688683465,
+            "roughnessFactor": -65.77253165372682
         },
         {
-            "nbClearedRowsFactor": -26.8825417224204,
-            "nbHolesFactor": -61.15139282173801,
-            "weightedHeightFactor": -17.246498834263463,
-            "cumulativeHeightFactor": -66.16318468703226,
-            "relativeHeightFactor": -27.1055942937421,
-            "roughnessFactor": -24.192176652984216
+            "nbClearedRowsFactor": -7.663308594631966,
+            "nbHolesFactor": -146.82911590841348,
+            "weightedHeightFactor": 13.737274286398343,
+            "cumulativeHeightFactor": -60.99074165842834,
+            "relativeHeightFactor": -81.54959212009777,
+            "roughnessFactor": -65.6331036383093
         },
         {
-            "nbClearedRowsFactor": -44.80171926358653,
-            "nbHolesFactor": -41.14776789334344,
-            "weightedHeightFactor": -11.958523759265233,
-            "cumulativeHeightFactor": -93.30422370882278,
-            "relativeHeightFactor": 68.41170823521995,
-            "roughnessFactor": -16.102677100378372
+            "nbClearedRowsFactor": -6.232916482339649,
+            "nbHolesFactor": -153.84344124536327,
+            "weightedHeightFactor": 12.930830467726706,
+            "cumulativeHeightFactor": -45.83464429413412,
+            "relativeHeightFactor": -90.71330300935296,
+            "roughnessFactor": -68.37454507412538
         },
         {
-            "nbClearedRowsFactor": -80.43477948955831,
-            "nbHolesFactor": -69.0236922210118,
-            "weightedHeightFactor": -17.246498834263463,
-            "cumulativeHeightFactor": -66.16318468703226,
-            "relativeHeightFactor": -26.794667122958998,
-            "roughnessFactor": -68.64738621809029
+            "nbClearedRowsFactor": -1.836637256765061,
+            "nbHolesFactor": -154.4097591128443,
+            "weightedHeightFactor": 15.978688321934492,
+            "cumulativeHeightFactor": -48.96128640334961,
+            "relativeHeightFactor": -85.4692601361606,
+            "roughnessFactor": -66.48496689018995
         },
         {
-            "nbClearedRowsFactor": -55.00841270678049,
-            "nbHolesFactor": -28.736790056084203,
-            "weightedHeightFactor": -17.246498834263463,
-            "cumulativeHeightFactor": 14.885508490585877,
-            "relativeHeightFactor": -6.528879743480928,
-            "roughnessFactor": -68.24278272234385
+            "nbClearedRowsFactor": 1.725028888061796,
+            "nbHolesFactor": -156.84172866274176,
+            "weightedHeightFactor": 11.255322801521283,
+            "cumulativeHeightFactor": -60.89497194635901,
+            "relativeHeightFactor": -81.08414310654923,
+            "roughnessFactor": -67.96200245357005
         },
         {
-            "nbClearedRowsFactor": 91.84131141729154,
-            "nbHolesFactor": -20.2094259650531,
-            "weightedHeightFactor": -17.246498834263463,
-            "cumulativeHeightFactor": -93.30422370882278,
-            "relativeHeightFactor": -6.528879743480928,
-            "roughnessFactor": -53.45506048969307
+            "nbClearedRowsFactor": 1.4404906303235019,
+            "nbHolesFactor": -152.36156862473408,
+            "weightedHeightFactor": 10.55216611142509,
+            "cumulativeHeightFactor": -50.768864758778065,
+            "relativeHeightFactor": -81.65791112889185,
+            "roughnessFactor": -68.33102719106041
         },
         {
-            "nbClearedRowsFactor": 46.360441518230914,
-            "nbHolesFactor": -41.86444620065418,
-            "weightedHeightFactor": -72.44351861157372,
-            "cumulativeHeightFactor": -54.029596780773005,
-            "relativeHeightFactor": -26.794667122958998,
-            "roughnessFactor": 39.97469018840977
+            "nbClearedRowsFactor": -0.513309019328821,
+            "nbHolesFactor": -161.38782997050558,
+            "weightedHeightFactor": 10.070155309047339,
+            "cumulativeHeightFactor": -56.31926743266434,
+            "relativeHeightFactor": -82.57657996993954,
+            "roughnessFactor": -65.40953274170626
         },
         {
-            "nbClearedRowsFactor": -55.00841270678049,
-            "nbHolesFactor": 90.13293211141885,
-            "weightedHeightFactor": 56.57602163964043,
-            "cumulativeHeightFactor": 4.643571383614486,
-            "relativeHeightFactor": -6.528879743480928,
-            "roughnessFactor": -58.14102428427765
+            "nbClearedRowsFactor": 1.7194396966779648,
+            "nbHolesFactor": -147.52756074093494,
+            "weightedHeightFactor": 9.271931654341078,
+            "cumulativeHeightFactor": -54.380802909593754,
+            "relativeHeightFactor": -91.23723790413298,
+            "roughnessFactor": -67.00287247148836
         },
         {
-            "nbClearedRowsFactor": -26.210247507455932,
-            "nbHolesFactor": -41.14776789334344,
-            "weightedHeightFactor": -32.0625493890126,
-            "cumulativeHeightFactor": -93.30422370882278,
-            "relativeHeightFactor": -27.1055942937421,
-            "roughnessFactor": -33.491670434865625
+            "nbClearedRowsFactor": -6.301212532363309,
+            "nbHolesFactor": -147.4747771455027,
+            "weightedHeightFactor": 14.083880082931023,
+            "cumulativeHeightFactor": -50.11323576480149,
+            "relativeHeightFactor": -91.53312047142809,
+            "roughnessFactor": -66.44762036997935
         },
         {
-            "nbClearedRowsFactor": -26.8825417224204,
-            "nbHolesFactor": -61.15139282173801,
-            "weightedHeightFactor": -17.246498834263463,
-            "cumulativeHeightFactor": -93.30422370882278,
-            "relativeHeightFactor": -27.1055942937421,
-            "roughnessFactor": -28.803324377778978
+            "nbClearedRowsFactor": -5.229298247172045,
+            "nbHolesFactor": -156.2009173834299,
+            "weightedHeightFactor": 13.6846632319999,
+            "cumulativeHeightFactor": -57.71771758653853,
+            "relativeHeightFactor": -81.4697427025384,
+            "roughnessFactor": -67.42929124012849
         },
         {
-            "nbClearedRowsFactor": -72.79550348002519,
-            "nbHolesFactor": -61.15139282173801,
-            "weightedHeightFactor": -47.204085369972205,
-            "cumulativeHeightFactor": -55.7448840996378,
-            "relativeHeightFactor": 77.15061784100939,
-            "roughnessFactor": -24.192176652984216
+            "nbClearedRowsFactor": 1.2538168073557443,
+            "nbHolesFactor": -160.88535886397386,
+            "weightedHeightFactor": 10.01899993277256,
+            "cumulativeHeightFactor": -50.658625160129276,
+            "relativeHeightFactor": -91.04258477630727,
+            "roughnessFactor": -67.34021033913827
         },
         {
-            "nbClearedRowsFactor": 44.825456189910085,
-            "nbHolesFactor": -96.20412113298315,
-            "weightedHeightFactor": -17.246498834263463,
-            "cumulativeHeightFactor": -54.029596780773005,
-            "relativeHeightFactor": -6.528879743480928,
-            "roughnessFactor": -70.13837745017032
+            "nbClearedRowsFactor": 5.1154717377937855,
+            "nbHolesFactor": -153.72138433324236,
+            "weightedHeightFactor": 9.62052146947611,
+            "cumulativeHeightFactor": -60.61931574169408,
+            "relativeHeightFactor": -91.90602931776029,
+            "roughnessFactor": -66.2437373016509
         },
         {
-            "nbClearedRowsFactor": 87.435540909237,
-            "nbHolesFactor": -41.14776789334344,
-            "weightedHeightFactor": -17.246498834263463,
-            "cumulativeHeightFactor": -93.30422370882278,
-            "relativeHeightFactor": -35.47972446587217,
-            "roughnessFactor": -16.102677100378372
+            "nbClearedRowsFactor": -7.807578673298678,
+            "nbHolesFactor": -152.97515926114062,
+            "weightedHeightFactor": 11.49335741979343,
+            "cumulativeHeightFactor": -53.299268546847216,
+            "relativeHeightFactor": -94.08351000628306,
+            "roughnessFactor": -64.0220057908263
         },
         {
-            "nbClearedRowsFactor": -44.80171926358653,
-            "nbHolesFactor": -98.30247560030169,
-            "weightedHeightFactor": -8.375986605194313,
-            "cumulativeHeightFactor": 41.69548749924971,
-            "relativeHeightFactor": 28.826687791698248,
-            "roughnessFactor": -28.803324377778978
+            "nbClearedRowsFactor": -3.09822949121192,
+            "nbHolesFactor": -152.2907915416577,
+            "weightedHeightFactor": 11.19110583171562,
+            "cumulativeHeightFactor": -62.25751495233744,
+            "relativeHeightFactor": -79.72423431070789,
+            "roughnessFactor": -72.81438977096745
         },
         {
-            "nbClearedRowsFactor": 83.88835004390043,
-            "nbHolesFactor": -41.86444620065418,
-            "weightedHeightFactor": -17.246498834263463,
-            "cumulativeHeightFactor": -93.30422370882278,
-            "relativeHeightFactor": -18.608012653803655,
-            "roughnessFactor": -58.14102428427765
+            "nbClearedRowsFactor": 3.4035534200201885,
+            "nbHolesFactor": -153.71557291044525,
+            "weightedHeightFactor": 13.972527660165369,
+            "cumulativeHeightFactor": -62.26227987281517,
+            "relativeHeightFactor": -84.76095948972943,
+            "roughnessFactor": -75.00737275259831
         },
         {
-            "nbClearedRowsFactor": -26.8825417224204,
-            "nbHolesFactor": -61.15139282173801,
-            "weightedHeightFactor": -17.246498834263463,
-            "cumulativeHeightFactor": -66.16318468703226,
-            "relativeHeightFactor": -27.1055942937421,
-            "roughnessFactor": -24.192176652984216
+            "nbClearedRowsFactor": 4.927563357487795,
+            "nbHolesFactor": -154.5854789414475,
+            "weightedHeightFactor": 6.359088149678534,
+            "cumulativeHeightFactor": -61.22055871035125,
+            "relativeHeightFactor": -91.14219895730616,
+            "roughnessFactor": -66.2437373016509
         },
         {
-            "nbClearedRowsFactor": -44.80171926358653,
-            "nbHolesFactor": -98.30247560030169,
-            "weightedHeightFactor": -32.0625493890126,
-            "cumulativeHeightFactor": -93.30422370882278,
-            "relativeHeightFactor": -35.47972446587217,
-            "roughnessFactor": -28.803324377778978
+            "nbClearedRowsFactor": -5.326360079927534,
+            "nbHolesFactor": -151.00409370971158,
+            "weightedHeightFactor": 11.642854615651485,
+            "cumulativeHeightFactor": -62.215187497656636,
+            "relativeHeightFactor": -95.81489301690723,
+            "roughnessFactor": -64.5936965475113
         },
         {
-            "nbClearedRowsFactor": -44.80171926358653,
-            "nbHolesFactor": -98.30247560030169,
-            "weightedHeightFactor": -11.958523759265233,
-            "cumulativeHeightFactor": -38.29356806802281,
-            "relativeHeightFactor": 28.826687791698248,
-            "roughnessFactor": 0.6914266304380874
+            "nbClearedRowsFactor": 1.3288883473361126,
+            "nbHolesFactor": -149.3205169193529,
+            "weightedHeightFactor": 15.252630670593295,
+            "cumulativeHeightFactor": -50.768864758778065,
+            "relativeHeightFactor": -85.08256227465513,
+            "roughnessFactor": -69.05558453408904
         },
         {
-            "nbClearedRowsFactor": 91.84131141729154,
-            "nbHolesFactor": -20.2094259650531,
-            "weightedHeightFactor": -89.32556651051209,
-            "cumulativeHeightFactor": -66.16318468703226,
-            "relativeHeightFactor": -6.528879743480928,
-            "roughnessFactor": -53.45506048969307
+            "nbClearedRowsFactor": 6.199077210931652,
+            "nbHolesFactor": -153.84344124536327,
+            "weightedHeightFactor": 7.711337440162016,
+            "cumulativeHeightFactor": -58.25403052312745,
+            "relativeHeightFactor": -91.43389443317264,
+            "roughnessFactor": -69.01876232699598
         },
         {
-            "nbClearedRowsFactor": -44.80171926358653,
-            "nbHolesFactor": 75.52021525096606,
-            "weightedHeightFactor": -11.958523759265233,
-            "cumulativeHeightFactor": -53.964703863730136,
-            "relativeHeightFactor": -26.794667122958998,
-            "roughnessFactor": -6.69710042013233
+            "nbClearedRowsFactor": -6.3209917935011735,
+            "nbHolesFactor": -153.75646349832408,
+            "weightedHeightFactor": 16.050801389931713,
+            "cumulativeHeightFactor": -60.940355325882884,
+            "relativeHeightFactor": -87.52099038224878,
+            "roughnessFactor": -66.45747321776147
         },
         {
-            "nbClearedRowsFactor": -51.604683057748105,
-            "nbHolesFactor": -49.720002579105646,
-            "weightedHeightFactor": -17.246498834263463,
-            "cumulativeHeightFactor": -5.459264451730505,
-            "relativeHeightFactor": -6.528879743480928,
-            "roughnessFactor": -28.803324377778978
+            "nbClearedRowsFactor": -5.358426443101492,
+            "nbHolesFactor": -148.54204788314186,
+            "weightedHeightFactor": 12.639586135282695,
+            "cumulativeHeightFactor": -63.0724748580507,
+            "relativeHeightFactor": -80.47445123700098,
+            "roughnessFactor": -65.74692493514183
         },
         {
-            "nbClearedRowsFactor": 4.2069256203323135,
-            "nbHolesFactor": -64.4341691444362,
-            "weightedHeightFactor": -17.246498834263463,
-            "cumulativeHeightFactor": -93.30422370882278,
-            "relativeHeightFactor": -27.1055942937421,
-            "roughnessFactor": -24.192176652984216
+            "nbClearedRowsFactor": -6.693354711871942,
+            "nbHolesFactor": -156.2009173834299,
+            "weightedHeightFactor": 8.468361438880848,
+            "cumulativeHeightFactor": -53.56872940711932,
+            "relativeHeightFactor": -82.457437091627,
+            "roughnessFactor": -67.42929124012849
         },
         {
-            "nbClearedRowsFactor": -44.80171926358653,
-            "nbHolesFactor": -98.30247560030169,
-            "weightedHeightFactor": -17.246498834263463,
-            "cumulativeHeightFactor": -93.30422370882278,
-            "relativeHeightFactor": -27.1055942937421,
-            "roughnessFactor": -28.803324377778978
+            "nbClearedRowsFactor": -6.3209917935011735,
+            "nbHolesFactor": -148.72578017881278,
+            "weightedHeightFactor": 12.639586135282695,
+            "cumulativeHeightFactor": -62.69921375069746,
+            "relativeHeightFactor": -79.9994153661354,
+            "roughnessFactor": -65.74692493514183
         },
         {
-            "nbClearedRowsFactor": 87.29202204153981,
-            "nbHolesFactor": -98.30247560030169,
-            "weightedHeightFactor": 5.654787113038836,
-            "cumulativeHeightFactor": -93.30422370882278,
-            "relativeHeightFactor": 28.826687791698248,
-            "roughnessFactor": -24.192176652984216
+            "nbClearedRowsFactor": -7.663308594631966,
+            "nbHolesFactor": -148.6891632033029,
+            "weightedHeightFactor": 13.737274286398343,
+            "cumulativeHeightFactor": -62.06892420287623,
+            "relativeHeightFactor": -95.11904131839923,
+            "roughnessFactor": -66.8175672716934
         },
         {
-            "nbClearedRowsFactor": -54.68818137441105,
-            "nbHolesFactor": -41.86444620065418,
-            "weightedHeightFactor": -32.0625493890126,
-            "cumulativeHeightFactor": -93.30422370882278,
-            "relativeHeightFactor": -27.1055942937421,
-            "roughnessFactor": -28.803324377778978
+            "nbClearedRowsFactor": 4.910147161971883,
+            "nbHolesFactor": -153.85573213821328,
+            "weightedHeightFactor": 9.245335730258377,
+            "cumulativeHeightFactor": -60.515252688894506,
+            "relativeHeightFactor": -93.49408438084146,
+            "roughnessFactor": -71.24682595954208
         },
         {
-            "nbClearedRowsFactor": 46.360441518230914,
-            "nbHolesFactor": -41.86444620065418,
-            "weightedHeightFactor": -17.246498834263463,
-            "cumulativeHeightFactor": -66.16318468703226,
-            "relativeHeightFactor": -26.794667122958998,
-            "roughnessFactor": 39.97469018840977
+            "nbClearedRowsFactor": -5.159291621498381,
+            "nbHolesFactor": -155.72637933839133,
+            "weightedHeightFactor": 8.720592738449252,
+            "cumulativeHeightFactor": -56.452957261352964,
+            "relativeHeightFactor": -83.20694006775682,
+            "roughnessFactor": -70.03120474973024
         },
         {
-            "nbClearedRowsFactor": 72.85815098468044,
-            "nbHolesFactor": -61.15139282173801,
-            "weightedHeightFactor": -47.204085369972205,
-            "cumulativeHeightFactor": -25.77796699590064,
-            "relativeHeightFactor": -6.528879743480928,
-            "roughnessFactor": -24.192176652984216
+            "nbClearedRowsFactor": -7.147256427534176,
+            "nbHolesFactor": -154.53024395893667,
+            "weightedHeightFactor": 13.068689913294179,
+            "cumulativeHeightFactor": -60.93698607597705,
+            "relativeHeightFactor": -95.11904131839923,
+            "roughnessFactor": -66.53884874949041
         },
         {
-            "nbClearedRowsFactor": -55.00841270678049,
-            "nbHolesFactor": -28.736790056084203,
-            "weightedHeightFactor": 54.32341680099256,
-            "cumulativeHeightFactor": -93.30422370882278,
-            "relativeHeightFactor": -6.528879743480928,
-            "roughnessFactor": -28.803324377778978
+            "nbClearedRowsFactor": 4.747117588049547,
+            "nbHolesFactor": -154.670078463637,
+            "weightedHeightFactor": 9.345389927647084,
+            "cumulativeHeightFactor": -62.14968114377138,
+            "relativeHeightFactor": -89.04608156011682,
+            "roughnessFactor": -67.84491633288368
         },
         {
-            "nbClearedRowsFactor": -26.210247507455932,
-            "nbHolesFactor": -98.30247560030169,
-            "weightedHeightFactor": -17.246498834263463,
-            "cumulativeHeightFactor": -93.30422370882278,
-            "relativeHeightFactor": -23.82771316620537,
-            "roughnessFactor": -33.491670434865625
+            "nbClearedRowsFactor": -5.472173278152522,
+            "nbHolesFactor": -153.39686601636052,
+            "weightedHeightFactor": 11.19110583171562,
+            "cumulativeHeightFactor": -64.43038424203802,
+            "relativeHeightFactor": -80.65446661984706,
+            "roughnessFactor": -72.38448161389255
         },
         {
-            "nbClearedRowsFactor": 66.24245397781547,
-            "nbHolesFactor": -61.15139282173801,
-            "weightedHeightFactor": -47.204085369972205,
-            "cumulativeHeightFactor": 11.821630635709042,
-            "relativeHeightFactor": 77.15061784100939,
-            "roughnessFactor": -68.24278272234385
+            "nbClearedRowsFactor": -9.05631655360283,
+            "nbHolesFactor": -155.9389128153257,
+            "weightedHeightFactor": 14.648135452664693,
+            "cumulativeHeightFactor": -55.00821072224208,
+            "relativeHeightFactor": -83.21508146085779,
+            "roughnessFactor": -64.6435542357703
         },
         {
-            "nbClearedRowsFactor": 87.435540909237,
-            "nbHolesFactor": -67.13154142317774,
-            "weightedHeightFactor": -17.246498834263463,
-            "cumulativeHeightFactor": -93.30422370882278,
-            "relativeHeightFactor": -6.528879743480928,
-            "roughnessFactor": -58.14102428427765
+            "nbClearedRowsFactor": -6.189707394803907,
+            "nbHolesFactor": -154.3499729041884,
+            "weightedHeightFactor": 10.911008642347934,
+            "cumulativeHeightFactor": -49.739241004366974,
+            "relativeHeightFactor": -91.5597372861342,
+            "roughnessFactor": -65.8328781122519
         },
         {
-            "nbClearedRowsFactor": -55.00841270678049,
-            "nbHolesFactor": -61.15139282173801,
-            "weightedHeightFactor": -17.246498834263463,
-            "cumulativeHeightFactor": -93.30422370882278,
-            "relativeHeightFactor": -6.528879743480928,
-            "roughnessFactor": -24.192176652984216
+            "nbClearedRowsFactor": -4.344782522081555,
+            "nbHolesFactor": -153.3863157989339,
+            "weightedHeightFactor": 7.732836288308336,
+            "cumulativeHeightFactor": -52.04928952905518,
+            "relativeHeightFactor": -88.86890962421674,
+            "roughnessFactor": -70.41355464478944
         },
         {
-            "nbClearedRowsFactor": -44.80171926358653,
-            "nbHolesFactor": -61.15139282173801,
-            "weightedHeightFactor": -17.246498834263463,
-            "cumulativeHeightFactor": -66.16318468703226,
-            "relativeHeightFactor": -23.82771316620537,
-            "roughnessFactor": -33.491670434865625
+            "nbClearedRowsFactor": -6.3209917935011735,
+            "nbHolesFactor": -155.2210114299224,
+            "weightedHeightFactor": 7.285018649134105,
+            "cumulativeHeightFactor": -62.52608806622575,
+            "relativeHeightFactor": -95.11904131839923,
+            "roughnessFactor": -72.22436239218341
         },
         {
-            "nbClearedRowsFactor": -45.797788179575335,
-            "nbHolesFactor": -41.14776789334344,
-            "weightedHeightFactor": 68.29430057521654,
-            "cumulativeHeightFactor": -54.029596780773005,
-            "relativeHeightFactor": -60.96003557262737,
-            "roughnessFactor": -28.803324377778978
+            "nbClearedRowsFactor": -9.628291020738393,
+            "nbHolesFactor": -153.99734079171293,
+            "weightedHeightFactor": 9.459476598181011,
+            "cumulativeHeightFactor": -53.1075347564396,
+            "relativeHeightFactor": -90.41551818112364,
+            "roughnessFactor": -67.10659926821478
         },
         {
-            "nbClearedRowsFactor": 87.435540909237,
-            "nbHolesFactor": -61.15139282173801,
-            "weightedHeightFactor": -47.204085369972205,
-            "cumulativeHeightFactor": -55.7448840996378,
-            "relativeHeightFactor": -4.811546126568302,
-            "roughnessFactor": -8.611861387141971
+            "nbClearedRowsFactor": -5.363968218745171,
+            "nbHolesFactor": -153.39686601636052,
+            "weightedHeightFactor": 10.716014946261325,
+            "cumulativeHeightFactor": -66.10985538384341,
+            "relativeHeightFactor": -79.72423431070789,
+            "roughnessFactor": -66.77665363506026
         },
         {
-            "nbClearedRowsFactor": 46.360441518230914,
-            "nbHolesFactor": -41.86444620065418,
-            "weightedHeightFactor": -0.8907784089059732,
-            "cumulativeHeightFactor": -54.029596780773005,
-            "relativeHeightFactor": -70.9448541641932,
-            "roughnessFactor": 39.97469018840977
+            "nbClearedRowsFactor": -7.601968775454134,
+            "nbHolesFactor": -153.61191190283327,
+            "weightedHeightFactor": 11.192919665827677,
+            "cumulativeHeightFactor": -44.773544465132986,
+            "relativeHeightFactor": -90.71330300935296,
+            "roughnessFactor": -67.54661990974049
         },
         {
-            "nbClearedRowsFactor": -44.80171926358653,
-            "nbHolesFactor": -98.30247560030169,
-            "weightedHeightFactor": -17.246498834263463,
-            "cumulativeHeightFactor": 0.4875074917952702,
-            "relativeHeightFactor": -6.528879743480928,
-            "roughnessFactor": -28.803324377778978
+            "nbClearedRowsFactor": -5.278109640434691,
+            "nbHolesFactor": -155.73596403720813,
+            "weightedHeightFactor": 15.978688321934492,
+            "cumulativeHeightFactor": -48.96128640334961,
+            "relativeHeightFactor": -86.10485961644447,
+            "roughnessFactor": -67.74579477620372
         },
         {
-            "nbClearedRowsFactor": -26.8825417224204,
-            "nbHolesFactor": -41.86444620065418,
-            "weightedHeightFactor": -17.246498834263463,
-            "cumulativeHeightFactor": -54.029596780773005,
-            "relativeHeightFactor": -29.53740197430473,
-            "roughnessFactor": 39.97469018840977
+            "nbClearedRowsFactor": -0.6105209288287368,
+            "nbHolesFactor": -154.82509239715236,
+            "weightedHeightFactor": 15.654965888986078,
+            "cumulativeHeightFactor": -51.4536521504232,
+            "relativeHeightFactor": -81.62320124881589,
+            "roughnessFactor": -70.09828204246197
         },
         {
-            "nbClearedRowsFactor": 83.2516602017879,
-            "nbHolesFactor": -98.30247560030169,
-            "weightedHeightFactor": -17.246498834263463,
-            "cumulativeHeightFactor": 88.76878916206826,
-            "relativeHeightFactor": -27.1055942937421,
-            "roughnessFactor": 20.950223925960884
+            "nbClearedRowsFactor": 1.0788308704646605,
+            "nbHolesFactor": -156.7273342532102,
+            "weightedHeightFactor": 10.305905930949127,
+            "cumulativeHeightFactor": -56.128911290698426,
+            "relativeHeightFactor": -91.39079646645365,
+            "roughnessFactor": -67.28223141523935
         },
         {
-            "nbClearedRowsFactor": -44.80171926358653,
-            "nbHolesFactor": 80.57089239100088,
-            "weightedHeightFactor": -32.0625493890126,
-            "cumulativeHeightFactor": -54.029596780773005,
-            "relativeHeightFactor": -26.794667122958998,
-            "roughnessFactor": -28.803324377778978
+            "nbClearedRowsFactor": -1.1934409646843909,
+            "nbHolesFactor": -155.65844224060186,
+            "weightedHeightFactor": 15.978688321934492,
+            "cumulativeHeightFactor": -50.773775301775636,
+            "relativeHeightFactor": -83.20827820038038,
+            "roughnessFactor": -62.046715582749165
         },
         {
-            "nbClearedRowsFactor": -55.00841270678049,
-            "nbHolesFactor": -28.736790056084203,
-            "weightedHeightFactor": 63.14219137827038,
-            "cumulativeHeightFactor": -93.30422370882278,
-            "relativeHeightFactor": -27.1055942937421,
-            "roughnessFactor": -28.803324377778978
+            "nbClearedRowsFactor": 2.738123969087976,
+            "nbHolesFactor": -156.7273342532102,
+            "weightedHeightFactor": 11.84507708344707,
+            "cumulativeHeightFactor": -55.66833112382913,
+            "relativeHeightFactor": -82.05264724131348,
+            "roughnessFactor": -66.84016577000303
         },
         {
-            "nbClearedRowsFactor": 91.84131141729154,
-            "nbHolesFactor": -98.30247560030169,
-            "weightedHeightFactor": -17.246498834263463,
-            "cumulativeHeightFactor": -93.30422370882278,
-            "relativeHeightFactor": -23.82771316620537,
-            "roughnessFactor": -35.214199092531786
+            "nbClearedRowsFactor": -5.661731600107771,
+            "nbHolesFactor": -150.79117469897076,
+            "weightedHeightFactor": 10.861035065996994,
+            "cumulativeHeightFactor": -61.821619870995164,
+            "relativeHeightFactor": -90.69448757872675,
+            "roughnessFactor": -71.24682595954208
         },
         {
-            "nbClearedRowsFactor": -51.604683057748105,
-            "nbHolesFactor": -49.720002579105646,
-            "weightedHeightFactor": -17.246498834263463,
-            "cumulativeHeightFactor": -93.30422370882278,
-            "relativeHeightFactor": 31.594400107405306,
-            "roughnessFactor": -28.803324377778978
+            "nbClearedRowsFactor": -4.95667097324391,
+            "nbHolesFactor": -144.4735260389649,
+            "weightedHeightFactor": 14.083880082931023,
+            "cumulativeHeightFactor": -49.73724382321664,
+            "relativeHeightFactor": -91.5597372861342,
+            "roughnessFactor": -66.46181038700806
         },
         {
-            "nbClearedRowsFactor": 91.84131141729154,
-            "nbHolesFactor": -98.30247560030169,
-            "weightedHeightFactor": 23.32821454176934,
-            "cumulativeHeightFactor": -82.01429922789598,
-            "relativeHeightFactor": -6.528879743480928,
-            "roughnessFactor": -53.45506048969307
+            "nbClearedRowsFactor": 3.0814710659121403,
+            "nbHolesFactor": -153.71557291044525,
+            "weightedHeightFactor": 13.972527660165369,
+            "cumulativeHeightFactor": -62.26227987281517,
+            "relativeHeightFactor": -84.76095948972943,
+            "roughnessFactor": -73.81293551961788
         }
     ]
 }

@@ -7,9 +7,11 @@ import fs from "fs/promises";
 import { getOrMakeDbConnection } from "../db";
 import { Collection } from "mongodb";
 
+import gaussian from "gaussian";
+
 const POPULATION_SIZE = 50;
-const ELITISM_PERCENTAGE = 0.4;
-const MUTATION_PERCENTAGE = 0.1;
+const ELITISM_PERCENTAGE = 0.5;
+const MUTATION_PERCENTAGE = 0.5;
 const PARALLEL_GAME = 1;
 
 const lastGenerationFile = "lastGeneration.json";
@@ -18,6 +20,8 @@ interface JsonGeneration {
     configs: IAConfig[];
     generation: number;
 }
+
+const distribution = gaussian(0, 1);
 
 export class Generation {
     public genNumber = 0;
@@ -72,28 +76,35 @@ export class Generation {
         );
 
         // store current generation data as last generation
-        await fs.writeFile(
-            lastGenerationFile,
-            JSON.stringify(
-                {
-                    generation: this.genNumber,
-                    configs: this.population.individuals.map((agent) => agent.config),
-                },
-                null,
-                4
-            )
-        );
-
-        await this.collection.insertOne({
-            generation: this.genNumber,
-            bestScore: results.best.score,
-            config: results.best.config,
-            seed: results.best.bestGame.seed,
-            average: results.average,
-            median: results.median,
-            worstScore: results.worstScore,
-            createdAt: Date.now(),
-        });
+        try {
+            await fs.writeFile(
+                lastGenerationFile,
+                JSON.stringify(
+                    {
+                        generation: this.genNumber,
+                        configs: this.population.individuals.map((agent) => agent.config),
+                    },
+                    null,
+                    4
+                )
+            );
+        } catch (e) {
+            console.log(e);
+        }
+        try {
+            await this.collection.insertOne({
+                generation: this.genNumber,
+                bestScore: results.best.score,
+                config: results.best.config,
+                seed: results.best.bestGame.seed,
+                average: results.average,
+                median: results.median,
+                worstScore: results.worstScore,
+                createdAt: Date.now(),
+            });
+        } catch (e) {
+            console.log(e);
+        }
 
         this.oldPop = this.population;
 
@@ -179,7 +190,7 @@ export class Population {
             Object.keys(config).map((key) => {
                 if (random() < MUTATION_PERCENTAGE) {
                     //@ts-ignore
-                    config[key] = randomWeight();
+                    config[key] = config[key] + distribution.ppf(Math.random());
                 }
             });
 

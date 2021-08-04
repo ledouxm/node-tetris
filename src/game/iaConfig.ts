@@ -27,4 +27,4 @@ export class IAConfig {
 }
 
 export const random = () => createGenerator()();
-export const randomWeight = () => random() * 200 - 100;
+export const randomWeight = () => random() * 2 - 1;

@@ -262,6 +262,37 @@ export const getPits = (grid: Grid, basePeaks?: number[]) => {
     return peaks.filter((peak) => peak === HEIGHT).length;
 };
 
+// export const getScore = (grid: Grid) => {
+//     const linesToClear = getLinesToClear(grid);
+
+//     linesToClear.forEach((lineIndex) => {
+//         grid.splice(lineIndex, 1);
+//         grid.unshift(makeLine());
+//     });
+
+//     const peaks = getPeaks(grid);
+//     // const { nbHoles, nbColumnsWithHoles } = getNbHoles(grid, peaks);
+//     const nbHoles = getHoles(grid);
+//     return {
+//         aggregatedHeight: getAverageHeight(grid),
+//         bumpiness: getBumpiness(grid, peaks),
+//         nbHoles,
+//         nbClearedRows: linesToClear.length,
+//     };
+// };
+
+// export const computeScore = (grid: Grid, config: IAConfig) => {
+//     const score = getScore(grid);
+
+//     let rating = 0;
+//     rating += score.aggregatedHeight * config.nbClearedRowsFactor;
+//     rating += score.bumpiness * config.weightedHeightFactor;
+//     rating += score.nbClearedRows * config.cumulativeHeightFactor;
+//     rating += score.nbHoles * config.nbHolesFactor;
+//     // rating += score.roughness * config.roughnessFactor;
+
+//     return { scores: score, total: rating, grid };
+// };
 export const getScore = (grid: Grid) => {
     const linesToClear = getLinesToClear(grid);
 
@@ -280,34 +311,15 @@ export const getScore = (grid: Grid) => {
     };
 };
 
-// export const getScore = (grid: Grid) => {
-//     const linesToClear = getLinesToClear(grid);
-
-//     linesToClear.forEach((lineIndex) => {
-//         grid.splice(lineIndex, 1);
-//         grid.unshift(makeLine());
-//     });
-
-//     const peaks = getPeaks(grid);
-//     const { nbHoles } = getNbHoles(grid, peaks);
-
-//     return {
-//         aggregatedHeight: getAggregatedHeight(peaks),
-//         bumpiness: getBumpiness(grid, peaks),
-//         nbHoles,
-//         nbClearedRows: linesToClear.length,
-//     };
-// };
-
 export const computeScore = (grid: Grid, config: IAConfig) => {
     const score = getScore(grid);
 
     let rating = 0;
-    rating += score.rowsCleared * config.nbClearedRowsFactor;
+    rating += Math.abs(score.rowsCleared * config.nbClearedRowsFactor);
     rating += score.weightedHeight * config.weightedHeightFactor;
     rating += score.cumulativeHeight * config.cumulativeHeightFactor;
     rating += score.relativeHeight * config.relativeHeightFactor;
-    rating += score.holes * config.nbHolesFactor;
+    rating += -Math.abs(score.holes * config.nbHolesFactor);
     rating += score.roughness * config.roughnessFactor;
 
     return { scores: score, total: rating, grid };

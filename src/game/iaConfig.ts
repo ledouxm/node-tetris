@@ -5,18 +5,16 @@ export interface ConfigData extends Omit<IAConfig, "toString"> {}
 export class IAConfig {
     nbClearedRowsFactor: number;
     nbHolesFactor: number;
-    weightedHeightFactor: number;
     cumulativeHeightFactor: number;
-    relativeHeightFactor: number;
-    roughnessFactor: number;
+    bumpinessFactor: number;
 
     constructor(baseConfig: Partial<ConfigData> = {}) {
-        this.nbClearedRowsFactor = baseConfig.nbClearedRowsFactor || randomWeight();
+        this.nbClearedRowsFactor =
+            baseConfig.nbClearedRowsFactor || randomWeight();
         this.nbHolesFactor = baseConfig.nbHolesFactor || randomWeight();
-        this.weightedHeightFactor = baseConfig.weightedHeightFactor || randomWeight();
-        this.cumulativeHeightFactor = baseConfig.cumulativeHeightFactor || randomWeight();
-        this.relativeHeightFactor = baseConfig.relativeHeightFactor || randomWeight();
-        this.roughnessFactor = baseConfig.roughnessFactor || randomWeight();
+        this.cumulativeHeightFactor =
+            baseConfig.cumulativeHeightFactor || randomWeight();
+        this.bumpinessFactor = baseConfig.bumpinessFactor || randomWeight();
     }
 
     toString() {
@@ -24,7 +22,17 @@ export class IAConfig {
             .map(([key, value]) => key + ": " + String(value))
             .join(", ");
     }
+
+    normalize() {
+        const norm = Object.values({ ...this }).reduce(
+            (acc, value) => acc + Math.pow(value, 2),
+            0
+        );
+        Object.entries({ ...this }).forEach(
+            ([key, value]) => (this[key] = value / norm)
+        );
+    }
 }
 
-export const random = () => createGenerator()();
-export const randomWeight = () => random() * 2 - 1;
+export const random = () => Math.random();
+export const randomWeight = () => Math.random() - 0.5;

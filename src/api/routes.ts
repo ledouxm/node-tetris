@@ -1,20 +1,28 @@
 import { Router } from "express";
-import { Game, getRandomPiece } from "../game/game";
-import { Ia } from "../game/ia";
 import { getBestGeneration, getGenerationBestScores } from "./generation";
-
+import fs from "fs/promises";
 const router = Router();
 
 router.get("/game/best", async (_req, res) => {
     const best = await getBestGeneration();
-    const game = new Game(best.seed);
-    game.start();
+    //   const game = new Game(best.seed);
+    //   game.start();
 
-    const ia = new Ia([game], best.config);
+    //   const ia = new Ia([game], best.config);
 
-    const result = ia.playWholeGame();
-
-    res.status(200).send({ ...result, generation: best.generation });
+    //   const result = ia.playWholeGame();
+    let moves = [];
+    try {
+        moves = JSON.parse(await fs.readFile("bestGame.json", "utf-8"));
+    } catch (e) {
+        console.log(e);
+    }
+    res.status(200).send({
+        generation: best.generation,
+        score: best.bestScore,
+        moves,
+        best,
+    });
 });
 
 router.get("/evolutions", async (_req, res) => {

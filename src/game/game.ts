@@ -1,7 +1,15 @@
 import { makeArrayOf } from "@pastable/utils";
 // import gen from "random-seed";
 import createGenerator from "seedrandom";
-import { BasePiece, basePieces, getCellsByNameAndRotation, randomSeed } from "./utils";
+import { ROTATIONS } from "./ia";
+import {
+    BasePiece,
+    basePieces,
+    getCellsByNameAndRotation,
+    linesClearedScores,
+    randomSeed,
+    singlePieces,
+} from "./utils";
 
 type Grid = string[][];
 
@@ -13,20 +21,19 @@ export const HEIGHT = 20;
 export const TETRIS_FACTOR = 50;
 export const PIECE_FACTOR = 1;
 
-const basePiecesWithoutRotation = basePieces.filter(
-    (basePiece: BasePiece) => basePiece.rotation === 0
-);
-
 export const makeLine = () => makeArrayOf(10).map(() => EMPTY_CELL);
 const makeGrid = () => makeArrayOf(20).map(makeLine);
 
-// const getRandomPiece = () => pickOne(basePieces.filter((basePiece) => basePiece.rotation === 0));
-export const getRandomPiece = (generator: any) => {
-    const random = generator() * basePiecesWithoutRotation.length;
-    const piece = basePiecesWithoutRotation[Math.floor(random)];
-
-    // console.log({ random, piece, seed: generator.seed });
-    return piece;
+export const makeRandomQueue = (generator: any) => {
+    const ordered = singlePieces.sort(() => generator() - 0.5);
+    const populated = ordered.map((pieceName) => {
+        const randomRotation = generator() * ROTATIONS.length;
+        return getCellsByNameAndRotation(
+            pieceName,
+            ROTATIONS[Math.floor(randomRotation)]
+        );
+    });
+    return populated;
 };
 export class Game {
     public score = 0;
@@ -43,7 +50,6 @@ export class Game {
     constructor(seed?: string) {
         this.seed = seed || randomSeed();
         this.generator = createGenerator(String(this.seed));
-        this.generator.seed = randomSeed();
     }
 
     clone(needSeed: boolean = true) {
@@ -67,8 +73,6 @@ export class Game {
         this.score = 0;
         this.nbClearedLines = 0;
 
-        this.queue = makeArrayOf(QUEUE_SIZE).map(() => getRandomPiece(this.generator));
-
         this.nextPiece();
         this.update();
     }
@@ -85,8 +89,9 @@ export class Game {
 
         if (this.status === "lost") return;
 
+        if (this.queue.length === 0)
+            this.queue = makeRandomQueue(this.generator);
         this.currentPiece = new Piece(this.queue.shift());
-        this.queue.push(getRandomPiece(this.generator));
 
         this.currentPiece.snapToGrid();
 
@@ -124,7 +129,8 @@ export class Game {
     clearPiece() {
         for (let i = 0; i < this.grid.length; i++) {
             for (let j = 0; j < this.grid[i].length; j++) {
-                if (this.grid[i][j] === CURRENT_CELL) this.grid[i][j] = EMPTY_CELL;
+                if (this.grid[i][j] === CURRENT_CELL)
+                    this.grid[i][j] = EMPTY_CELL;
             }
         }
     }
@@ -134,7 +140,8 @@ export class Game {
             .getCellCoordinates()
             .some(
                 (coord) =>
-                    !isOutOfBounds(coord.x, coord.y) && this.grid[coord.x][coord.y] !== EMPTY_CELL
+                    !isOutOfBounds(coord.x, coord.y) &&
+                    this.grid[coord.x][coord.y] !== EMPTY_CELL
             );
     }
 
@@ -171,8 +178,7 @@ export class Game {
             this.grid.unshift(makeLine());
         });
 
-        // if (linesToClear.length) console.log("clearing", linesToClear);
-        this.score += TETRIS_FACTOR * linesToClear.length;
+        this.score += linesClearedScores[linesToClear.length];
     }
 
     lose() {
@@ -189,7 +195,11 @@ export class Game {
 
 export const getLinesToClear = (grid: Grid) => {
     return grid.reduce((arr, currentRow, currentIndex) => {
-        if (currentRow.every((cell) => cell !== EMPTY_CELL && cell !== CURRENT_CELL)) {
+        if (
+            currentRow.every(
+                (cell) => cell !== EMPTY_CELL && cell !== CURRENT_CELL
+            )
+        ) {
             arr.push(currentIndex);
         }
         return arr;
@@ -219,12 +229,14 @@ export class Piece {
     }
 
     goLeft(grid: Grid) {
-        if (this.y < 0 || !this.isMoveAllowed(grid, this.x, this.y - 1)) return false;
+        if (this.y < 0 || !this.isMoveAllowed(grid, this.x, this.y - 1))
+            return false;
         this.y--;
         return true;
     }
     goRight(grid: Grid) {
-        if (this.y >= WIDTH || !this.isMoveAllowed(grid, this.x, this.y + 1)) return false;
+        if (this.y >= WIDTH || !this.isMoveAllowed(grid, this.x, this.y + 1))
+            return false;
         this.y++;
         return true;
     }
@@ -243,7 +255,9 @@ export class Piece {
 
     isMoveAllowed(grid: Grid, x: number, y: number) {
         return this.getCellCoordinates(x, y).every(
-            (coord) => !isOutOfBounds(coord.x, coord.y) && grid[coord.x][coord.y] === EMPTY_CELL
+            (coord) =>
+                !isOutOfBounds(coord.x, coord.y) &&
+                grid[coord.x][coord.y] === EMPTY_CELL
         );
     }
 
@@ -260,7 +274,10 @@ export class Piece {
             y: 0,
         };
         this.getCellCoordinates().forEach((coord) => {
-            const { vertical, horizontal } = getDistanceFromBounds(coord.x, coord.y);
+            const { vertical, horizontal } = getDistanceFromBounds(
+                coord.x,
+                coord.y
+            );
             if (Math.abs(movement.x) < Math.abs(vertical)) {
                 movement.x = vertical;
             }
@@ -285,9 +302,14 @@ export class Piece {
         let maxX = this.x;
         for (let currentX = this.x; currentX >= 0; currentX++) {
             if (
-                this.getCellCoordinates(currentX, y !== undefined ? y : this.y).every(
+                this.getCellCoordinates(
+                    currentX,
+                    y !== undefined ? y : this.y
+                ).every(
                     (coord) =>
-                        coord.x >= 0 && coord.x < HEIGHT && grid[coord.x][coord.y] === EMPTY_CELL
+                        coord.x >= 0 &&
+                        coord.x < HEIGHT &&
+                        grid[coord.x][coord.y] === EMPTY_CELL
                 )
             ) {
                 maxX = currentX;

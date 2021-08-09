@@ -1,6 +1,28 @@
-import { CURRENT_CELL, EMPTY_CELL, HEIGHT } from "./game";
-import { getPeaks, Grid } from "./ia";
+import { CURRENT_CELL, EMPTY_CELL, HEIGHT, WIDTH } from "./game";
+import { Grid } from "./ia";
+export const getPeaks = (grid: Grid) => {
+    const peaks = [];
+    let currentHeight = 0;
+    // each row
+    while (peaks.length < WIDTH) {
+        // bottom -> reset
+        if (currentHeight === HEIGHT) {
+            peaks.push(HEIGHT);
 
+            currentHeight = 0;
+        } else if (
+            ![EMPTY_CELL, CURRENT_CELL].includes(
+                grid[currentHeight][peaks.length]
+            )
+        ) {
+            peaks.push(currentHeight);
+
+            currentHeight = 0;
+        } else currentHeight++;
+    }
+
+    return peaks;
+};
 export const clone = (obj: any) => JSON.parse(JSON.stringify(obj));
 
 /**

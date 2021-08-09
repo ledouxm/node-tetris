@@ -25,7 +25,7 @@ export const makeLine = () => makeArrayOf(10).map(() => EMPTY_CELL);
 const makeGrid = () => makeArrayOf(20).map(makeLine);
 
 export const makeRandomQueue = (generator: any) => {
-    const ordered = singlePieces.sort(() => generator() - 0.5);
+    const ordered = [...singlePieces].sort(() => generator() - 0.5);
     const populated = ordered.map((pieceName) => {
         const randomRotation = generator() * ROTATIONS.length;
         return getCellsByNameAndRotation(
@@ -59,7 +59,7 @@ export class Game {
         clone.score = this.score;
         clone.status = this.status;
         clone.grid = [...this.grid.map((row) => [...row])];
-        clone.queue = this.queue;
+        clone.queue = [...this.queue];
         clone.currentPiece = this.currentPiece.clone();
 
         return clone;

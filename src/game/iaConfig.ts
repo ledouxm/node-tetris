@@ -1,5 +1,3 @@
-import createGenerator from "seedrandom";
-
 export interface ConfigData extends Omit<IAConfig, "toString"> {}
 
 export class IAConfig {
@@ -7,6 +5,8 @@ export class IAConfig {
     nbHolesFactor: number;
     cumulativeHeightFactor: number;
     bumpinessFactor: number;
+    relativeHeightFactor: number;
+    heightFactor: number;
 
     constructor(baseConfig: Partial<ConfigData> = {}) {
         this.nbClearedRowsFactor =
@@ -15,6 +15,9 @@ export class IAConfig {
         this.cumulativeHeightFactor =
             baseConfig.cumulativeHeightFactor || randomWeight();
         this.bumpinessFactor = baseConfig.bumpinessFactor || randomWeight();
+        this.relativeHeightFactor =
+            baseConfig.relativeHeightFactor || randomWeight();
+        this.heightFactor = baseConfig.heightFactor || randomWeight();
     }
 
     toString() {

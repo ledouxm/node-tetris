@@ -13,7 +13,7 @@ router.get("/game/best", async (_req, res) => {
     //   const result = ia.playWholeGame();
     let moves = [];
     try {
-        moves = JSON.parse(await fs.readFile("bestGame.json", "utf-8"));
+        moves = JSON.parse(await fs.readFile("worstGame.json", "utf-8"));
     } catch (e) {
         console.log(e);
     }
